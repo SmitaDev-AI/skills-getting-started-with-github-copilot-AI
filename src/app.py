@@ -25,7 +25,13 @@ activities = {
     "Debate Team": {"description": "Improve your public speaking skills", "participants": []},
     "Science Club": {"description": "Explore STEM topics", "participants": []},
     "Drama Club": {"description": "Perform in school plays", "participants": []},
-    "Math Team": {"description": "Compete in math competitions", "participants": []}
+    "Math Team": {"description": "Compete in math competitions", "participants": []},
+    "Basketball Team": {"description": "Play basketball games", "participants": []},
+    "Soccer Club": {"description": "Kick around a soccer ball", "participants": []},
+    "Art Club": {"description": "Create and appreciate art", "participants": []},
+    "Music Club": {"description": "Learn to play instruments", "participants": []},
+    "Coding Club": {"description": "Learn programming", "participants": []},
+    "History Club": {"description": "Study historical events", "participants": []}
 }
 
 @app.get("/")
