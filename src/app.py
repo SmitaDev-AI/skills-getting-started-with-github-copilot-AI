@@ -21,19 +21,12 @@ app.mount("/static", StaticFiles(directory=os.path.join(Path(__file__).parent,
 
 # In-memory activity database
 activities = {
-    "Chess Club": {"description": "Learn and play chess", "participants": []},
+    "Chess Club": {"description": "Learn and play chess", "participants": ['john.doe@example.com', 'jane.smith@example.com', 'smitatanmohan54@gmail.com']},
     "Debate Team": {"description": "Improve your public speaking skills", "participants": []},
     "Science Club": {"description": "Explore STEM topics", "participants": []},
     "Drama Club": {"description": "Perform in school plays", "participants": []},
     "Math Team": {"description": "Compete in math competitions", "participants": []},
-    "Basketball Team": {"description": "Play basketball games", "participants": []},
-    "Soccer Club": {"description": "Kick around a soccer ball", "participants": []},
-    "Art Club": {"description": "Create and appreciate art", "participants": []},
-    "Music Club": {"description": "Learn to play instruments", "participants": []},
-    "Coding Club": {"description": "Learn programming", "participants": []},
-    "History Club": {"description": "Study historical events", "participants": []}
 }
-
 @app.get("/")
 def root():
     return RedirectResponse(url="/static/index.html")
